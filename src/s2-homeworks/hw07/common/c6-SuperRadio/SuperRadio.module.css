@@ -1,0 +1,35 @@
+.radio {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.radio::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.radio:checked::before {
+    background-color: #333;
+}
+
+.label {
+    margin-right: 10px;
+}
+
+.options {
+    margin-top: 10px;
+}
